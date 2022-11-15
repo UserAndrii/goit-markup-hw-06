@@ -451,7 +451,7 @@
           </address>
         </div>
         <div class="social-conteiner">
-          <p class="social-title">приєднуйтесь</p>
+          <p class="call-title">приєднуйтесь</p>
           <ul class="social-list list">
             <li class="social-item">
               <a href="#" class="social-icon" target="_blank" rel="noopener noreferrer nofollow">
@@ -483,6 +483,15 @@
             </li>
           </ul>
         </div>
+        <div class="subscription-conteiner">
+          <p class="call-title">Підпишіться на розсилку</p>
+          <form>
+            <label name="user-email">
+              <input class="input-subscription" type="email" name="user-email" placeholder="E-mail"/>
+            </label>
+            <button class="button btn-subscription" type="submit">Підписатися</button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -492,6 +501,38 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+        <div class="modal-info">
+          <label class="label-title" for="name" name="name">Ім'я</label>
+          <input class="input-field" type="text" name="name" id="name" autofocus />
+
+          <label class="label-title" for="tel">Телефон</label>
+          <input class="input-field" type="tel" name="tel" id="tel" />
+
+          <label class="label-title" for="email">Пошта</label>
+          <input class="input-field" type="email" name="email" id="email" />
+
+          <label class="label-title" for="comment">Коментар</label>
+          <textarea
+            class="input-field comment"
+            name="comment"
+            id="comment"
+            placeholder="Введіть текст"
+          ></textarea>
+
+          <div class="consent">
+            <input type="checkbox" name="consent" id="consent" />
+            <label class="cosent-text" for="consent"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="conditions" href="#" target="_blank" rel="noopener noreferrer"
+                >Умови договору</a
+              >
+            </label>
+          </div>
+
+          <button type="submit" class="btn-submit">Відправити</button>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
