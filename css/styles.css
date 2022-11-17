@@ -574,6 +574,7 @@ img {
   width: 358px;
   height: 50px;
   padding-left: 16px;
+  cursor: pointer;
 
   background-color: var(--hero-footer-bgc);
   color: var(--primary-white-color);
@@ -590,13 +591,9 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.input-subscription:hover {
-  border: 1px solid var(--hover-accent-color);
-}
-
 .input-subscription:focus {
   border: 1px solid var(--hover-accent-color);
-  outline: none;
+  outline: transparent;
 }
 
 .button.btn-subscription {
@@ -708,7 +705,7 @@ img {
   margin-bottom: 4px;
 }
 
-.input {
+.input-wrapper {
   position: relative;
 }
 
@@ -723,13 +720,9 @@ img {
   transition: border var(--transition-timing) var(--timing-function);
 }
 
-.input-field:hover {
-  border: 1px solid var(--hover-accent-color);
-}
-
 .input-field:focus {
   border: 1px solid var(--hover-accent-color);
-  outline: none;
+  outline: transparent;
 }
 
 .input-icon {
@@ -745,12 +738,7 @@ img {
   transition: fill var(--transition-timing) var(--timing-function);
 }
 
-.input-field:hover + .input-icon,
 .input-field:focus + .input-icon {
-  fill: var(--hover-accent-color);
-}
-
-.input-icon:hover {
   fill: var(--hover-accent-color);
 }
 
@@ -770,6 +758,7 @@ img {
 
 .cosent-text {
   display: flex;
+  justify-content: center;
   align-items: center;
 
   font-size: 14px;
@@ -785,18 +774,27 @@ img {
 }
 
 .checkbox-icon {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 16px;
   height: 15px;
+  margin-right: 8px;
 
   border-radius: 2px;
   border: 2px solid var(--title-color);
+  transition: border var(--transition-timing) var(--timing-function),
+    background-color var(--transition-timing) var(--timing-function);
+}
+
+.icon-check {
+  display: block;
+  width: 15px;
+  height: 15px;
 }
 
 .checkbox:checked + .checkbox-icon {
   background-color: var(--hover-accent-color);
-  background-size: contain;
-  background-origin: border-box;
   border: 2px solid var(--hover-accent-color);
 }
 
@@ -805,20 +803,11 @@ img {
 }
 
 .btn-submit {
-  display: block;
   margin-left: auto;
   margin-right: auto;
-
-  width: 200px;
-  height: 50px;
-
-  background-color: var(--hover-accent-color);
-  color: var(--primary-white-color);
+  padding-left: 52px;
+  padding-right: 52px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-
-  cursor: pointer;
 }
 
 /* ----------PORTFOLIO STYLES---------- */
