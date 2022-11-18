@@ -769,6 +769,8 @@ img {
 }
 
 .checkbox {
+  -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   position: absolute;
 }
