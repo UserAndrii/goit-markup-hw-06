@@ -764,6 +764,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color);
+  cursor: pointer;
 
   margin-bottom: 30px;
 }
